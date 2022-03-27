@@ -44,7 +44,7 @@ namespace WindowsMedicos
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(58, 99);
+            this.label1.Location = new System.Drawing.Point(97, 78);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 13);
             this.label1.TabIndex = 0;
@@ -54,7 +54,7 @@ namespace WindowsMedicos
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(58, 163);
+            this.label2.Location = new System.Drawing.Point(97, 142);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 13);
             this.label2.TabIndex = 1;
@@ -64,7 +64,7 @@ namespace WindowsMedicos
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(58, 131);
+            this.label3.Location = new System.Drawing.Point(97, 110);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 13);
             this.label3.TabIndex = 2;
@@ -75,7 +75,7 @@ namespace WindowsMedicos
             this.btnAñadirMedico.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAñadirMedico.BackColor = System.Drawing.SystemColors.Control;
             this.btnAñadirMedico.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAñadirMedico.Location = new System.Drawing.Point(280, 246);
+            this.btnAñadirMedico.Location = new System.Drawing.Point(357, 204);
             this.btnAñadirMedico.Margin = new System.Windows.Forms.Padding(0);
             this.btnAñadirMedico.Name = "btnAñadirMedico";
             this.btnAñadirMedico.Size = new System.Drawing.Size(75, 23);
@@ -87,7 +87,7 @@ namespace WindowsMedicos
             // btnCancelarMedico
             // 
             this.btnCancelarMedico.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancelarMedico.Location = new System.Drawing.Point(202, 246);
+            this.btnCancelarMedico.Location = new System.Drawing.Point(279, 204);
             this.btnCancelarMedico.Name = "btnCancelarMedico";
             this.btnCancelarMedico.Size = new System.Drawing.Size(75, 23);
             this.btnCancelarMedico.TabIndex = 4;
@@ -98,7 +98,7 @@ namespace WindowsMedicos
             // txtNombreMedico
             // 
             this.txtNombreMedico.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtNombreMedico.Location = new System.Drawing.Point(198, 96);
+            this.txtNombreMedico.Location = new System.Drawing.Point(237, 75);
             this.txtNombreMedico.Name = "txtNombreMedico";
             this.txtNombreMedico.Size = new System.Drawing.Size(100, 20);
             this.txtNombreMedico.TabIndex = 5;
@@ -106,7 +106,7 @@ namespace WindowsMedicos
             // txtEdadMedico
             // 
             this.txtEdadMedico.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtEdadMedico.Location = new System.Drawing.Point(198, 131);
+            this.txtEdadMedico.Location = new System.Drawing.Point(237, 110);
             this.txtEdadMedico.Name = "txtEdadMedico";
             this.txtEdadMedico.Size = new System.Drawing.Size(100, 20);
             this.txtEdadMedico.TabIndex = 6;
@@ -114,7 +114,7 @@ namespace WindowsMedicos
             // txtEspecialidad
             // 
             this.txtEspecialidad.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtEspecialidad.Location = new System.Drawing.Point(198, 163);
+            this.txtEspecialidad.Location = new System.Drawing.Point(237, 142);
             this.txtEspecialidad.Name = "txtEspecialidad";
             this.txtEspecialidad.Size = new System.Drawing.Size(100, 20);
             this.txtEspecialidad.TabIndex = 7;
@@ -124,7 +124,7 @@ namespace WindowsMedicos
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(63, 39);
+            this.label4.Location = new System.Drawing.Point(102, 18);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(235, 39);
             this.label4.TabIndex = 8;
@@ -134,7 +134,7 @@ namespace WindowsMedicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(369, 278);
+            this.ClientSize = new System.Drawing.Size(446, 236);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtEspecialidad);
             this.Controls.Add(this.txtEdadMedico);

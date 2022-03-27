@@ -19,9 +19,9 @@ namespace WindowsMedicos
             nombre = _nombre;
 
         }
-        public override string ToString()
-        {
-            return $"{nombre} tiene {edad} años";
-        }
+        //public override string ToString()
+        //{
+        //    return $"{nombre} tiene {edad} años";
+        //}
     }
 }

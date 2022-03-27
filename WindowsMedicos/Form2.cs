@@ -12,10 +12,11 @@ namespace WindowsMedicos
 {
     partial class Form2 : Form
     {
-        List<Medico> listaMedicos = new List<Medico>();
+        List<Medico> listaMedicos;
         List<Paciente> listaPacientes = new List<Paciente> ();
-        public Form2(List<Medico> listaMedicos,  List<Paciente> listaPacientes)
+        public Form2(List<Medico> listaMedicoss,  List<Paciente> listaPacientes)
         {
+            listaMedicos = listaMedicoss;
             InitializeComponent();
         }
 

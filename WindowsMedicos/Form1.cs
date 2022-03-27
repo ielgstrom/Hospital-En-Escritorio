@@ -14,14 +14,19 @@ namespace WindowsMedicos
     {
         List<Medico> listaMedicos;
         List<Paciente> listaPacientes;
+        
         public FormInscripcion(List<Medico> listaMedicoss, List<Paciente>  listaPacientess)
         {
+            listaMedicos = listaMedicoss;
+            listaPacientes = listaPacientess;
             InitializeComponent();
+            
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            var h = new FormDeleteUser();
+            h.ShowDialog();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -32,12 +37,26 @@ namespace WindowsMedicos
         private void button1_Click(object sender, EventArgs e)
         {
             var m = new Form2(listaMedicos, listaPacientes);
-            m.Show();
+            m.ShowDialog();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+
+        private void btnMasPaciente_Click(object sender, EventArgs e)
         {
-            this.ShowDialog($"{listaMedicos[0].getNombre()}");
+            var m = new FormNewPersona(listaMedicos, listaPacientes);
+            m.ShowDialog();
+        }
+
+        private void butnlistmedicos_Click(object sender, EventArgs e)
+        {
+            string ListaADevolevr = "";
+            for (int k = 0; k < listaMedicos.Count; k++)
+            {
+                ListaADevolevr += $"{listaMedicos[k].getNombre()} de {listaMedicos[k].getEspecialidad()} con {listaMedicos[k].getEdad()} años\n";
+
+            }
+            if (ListaADevolevr != "") MessageBox.Show(ListaADevolevr);
+            else MessageBox.Show("No hay medicos");
         }
     }
 }

@@ -31,7 +31,7 @@ namespace WindowsMedicos
         {
             this.button1 = new System.Windows.Forms.Button();
             this.btnMasPaciente = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.butnlistmedicos = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -55,10 +55,10 @@ namespace WindowsMedicos
             // 
             // btnMasPaciente
             // 
+            this.btnMasPaciente.AllowDrop = true;
             this.btnMasPaciente.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMasPaciente.Enabled = false;
             this.btnMasPaciente.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMasPaciente.Location = new System.Drawing.Point(38, 82);
             this.btnMasPaciente.Name = "btnMasPaciente";
@@ -66,20 +66,21 @@ namespace WindowsMedicos
             this.btnMasPaciente.TabIndex = 1;
             this.btnMasPaciente.Text = "Añadir Paciente";
             this.btnMasPaciente.UseVisualStyleBackColor = true;
+            this.btnMasPaciente.Click += new System.EventHandler(this.btnMasPaciente_Click);
             // 
-            // button3
+            // butnlistmedicos
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.butnlistmedicos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(38, 140);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(127, 51);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Listar Medicos";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.butnlistmedicos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butnlistmedicos.Location = new System.Drawing.Point(38, 140);
+            this.butnlistmedicos.Name = "butnlistmedicos";
+            this.butnlistmedicos.Size = new System.Drawing.Size(127, 51);
+            this.butnlistmedicos.TabIndex = 2;
+            this.butnlistmedicos.Text = "Listar Medicos";
+            this.butnlistmedicos.UseVisualStyleBackColor = true;
+            this.butnlistmedicos.Click += new System.EventHandler(this.butnlistmedicos_Click);
             // 
             // button4
             // 
@@ -125,13 +126,14 @@ namespace WindowsMedicos
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.btnMasPaciente);
             this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.butnlistmedicos);
             this.panel1.Controls.Add(this.button4);
-            this.panel1.Location = new System.Drawing.Point(189, 12);
+            this.panel1.Location = new System.Drawing.Point(51, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 387);
             this.panel1.TabIndex = 6;
@@ -140,7 +142,7 @@ namespace WindowsMedicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(571, 421);
+            this.ClientSize = new System.Drawing.Size(295, 421);
             this.Controls.Add(this.panel1);
             this.Name = "FormInscripcion";
             this.Text = "Fromulario de Hospital";
@@ -153,7 +155,7 @@ namespace WindowsMedicos
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnMasPaciente;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button butnlistmedicos;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;

@@ -38,10 +38,10 @@ namespace WindowsMedicos
         public string getNombre() { return nombre; }
         public string getEspecialidad() { return especialidad; }
         public int getEdad() { return edad; }
-        public override string ToString()
-        {
-            return base.ToString() + $" es un medico de la rama de {especialidad}";
-        }
+        //public override string ToString()
+        //{
+        //    return base.ToString() + $" es un medico de la rama de {especialidad}";
+        //}
 
     }
 }

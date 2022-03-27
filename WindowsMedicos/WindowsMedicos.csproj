@@ -58,6 +58,18 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDeleteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeleteUser.Designer.cs">
+      <DependentUpon>FormDeleteUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewPersona.Designer.cs">
+      <DependentUpon>FormNewPersona.cs</DependentUpon>
+    </Compile>
     <Compile Include="Medico.cs" />
     <Compile Include="Paciente.cs" />
     <Compile Include="Persona.cs" />
@@ -68,6 +80,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteUser.resx">
+      <DependentUpon>FormDeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewPersona.resx">
+      <DependentUpon>FormNewPersona.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
