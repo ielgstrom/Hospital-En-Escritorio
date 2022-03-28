@@ -34,7 +34,9 @@ namespace WindowsMedicos
         {
             pacientesDeMedico.Remove(pacienteQueVasAEliminar);
         }
-        //public void quitarPaciente
+        public void setNombre (string newNombre) { nombre = newNombre; }
+        public void setEspecialidad(string newEspecialidad) { especialidad = newEspecialidad; }
+        public void setEdad(int newEdad) { edad = newEdad; }
         public string getNombre() { return nombre; }
         public string getEspecialidad() { return especialidad; }
         public int getEdad() { return edad; }

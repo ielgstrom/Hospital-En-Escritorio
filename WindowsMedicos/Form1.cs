@@ -33,6 +33,19 @@ namespace WindowsMedicos
         {
             var m = new Form2(listaMedicos, listaPacientes);
             m.ShowDialog();
+            if (listaMedicos.Count != 0)
+            { 
+                btnModMedico.Enabled = true;
+                btnMasPaciente.Enabled = true;
+                butnlistmedicos.Enabled = true;
+                button4.Enabled = true;
+            }
+            else {
+                btnModMedico.Enabled = false;
+                btnMasPaciente.Enabled = false;
+                butnlistmedicos.Enabled = false;
+                button4.Enabled = false;
+            }
         }
 
 
@@ -40,6 +53,16 @@ namespace WindowsMedicos
         {
             var m = new FormNewPersona(listaMedicos, listaPacientes);
             m.ShowDialog();
+            if (listaPacientes.Count != 0) 
+            {
+                btnDeleteUser.Enabled = true;
+                btnModifyPatient.Enabled = true;
+            }
+            else 
+            { 
+                btnModifyPatient.Enabled = false;
+                btnDeleteUser.Enabled = false;
+            }
         }
 
         private void butnlistmedicos_Click(object sender, EventArgs e)
@@ -58,12 +81,34 @@ namespace WindowsMedicos
         {
             var u = new FormDeleteUser(listaPacientes, listaMedicos);
             u.ShowDialog();
+            if (listaPacientes.Count != 0)
+            {
+                btnDeleteUser.Enabled = true;
+                btnModifyPatient.Enabled = true;
+            }
+            else
+            {
+                btnModifyPatient.Enabled = false;
+                btnDeleteUser.Enabled = false;
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             var ty = new FormListPatientsOfDoctor(listaMedicos);
             ty.ShowDialog();
+        }
+
+        private void btnModifyPatient_Click(object sender, EventArgs e)
+        {
+            var jeje = new FormModifyPaciente(listaMedicos, listaPacientes);
+            jeje.ShowDialog();
+        }
+
+        private void btnModMedico_Click(object sender, EventArgs e)
+        {
+            var queEsEsto = new FormModifyDoctor(listaMedicos);
+            queEsEsto.ShowDialog();
         }
     }
 }

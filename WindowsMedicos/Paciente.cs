@@ -21,6 +21,9 @@ namespace WindowsMedicos
         public string getNombre() { return nombre; }
 
         public int getEdad() { return edad; }
+
+        public void setEdad(int newEdad) { edad = newEdad; }
+        public void setNombre(string newNombre) { nombre=newNombre; }
         public override string ToString()
         {
             return base.ToString() + $" es un paciente";
