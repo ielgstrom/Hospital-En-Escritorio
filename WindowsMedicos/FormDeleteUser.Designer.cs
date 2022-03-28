@@ -29,43 +29,45 @@ namespace WindowsMedicos
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCancelarMedico = new System.Windows.Forms.Button();
-            this.btnAñadirMedico = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnCancelarEliminarPaciente = new System.Windows.Forms.Button();
+            this.btnEliminarPaciente = new System.Windows.Forms.Button();
+            this.comboBoxPacientes = new System.Windows.Forms.ComboBox();
             this.lblPatientDelete = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btnCancelarMedico
+            // btnCancelarEliminarPaciente
             // 
-            this.btnCancelarMedico.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnCancelarMedico.Location = new System.Drawing.Point(12, 189);
-            this.btnCancelarMedico.Name = "btnCancelarMedico";
-            this.btnCancelarMedico.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelarMedico.TabIndex = 6;
-            this.btnCancelarMedico.Text = "Cancelar";
-            this.btnCancelarMedico.UseVisualStyleBackColor = true;
+            this.btnCancelarEliminarPaciente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnCancelarEliminarPaciente.Location = new System.Drawing.Point(12, 189);
+            this.btnCancelarEliminarPaciente.Name = "btnCancelarEliminarPaciente";
+            this.btnCancelarEliminarPaciente.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelarEliminarPaciente.TabIndex = 6;
+            this.btnCancelarEliminarPaciente.Text = "Cancelar";
+            this.btnCancelarEliminarPaciente.UseVisualStyleBackColor = true;
+            this.btnCancelarEliminarPaciente.Click += new System.EventHandler(this.btnCancelarEliminarPaciente_Click);
             // 
-            // btnAñadirMedico
+            // btnEliminarPaciente
             // 
-            this.btnAñadirMedico.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAñadirMedico.BackColor = System.Drawing.SystemColors.Control;
-            this.btnAñadirMedico.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAñadirMedico.Location = new System.Drawing.Point(99, 189);
-            this.btnAñadirMedico.Margin = new System.Windows.Forms.Padding(0);
-            this.btnAñadirMedico.Name = "btnAñadirMedico";
-            this.btnAñadirMedico.Size = new System.Drawing.Size(75, 23);
-            this.btnAñadirMedico.TabIndex = 5;
-            this.btnAñadirMedico.Text = "Eliminar";
-            this.btnAñadirMedico.UseVisualStyleBackColor = false;
+            this.btnEliminarPaciente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEliminarPaciente.BackColor = System.Drawing.SystemColors.Control;
+            this.btnEliminarPaciente.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnEliminarPaciente.Location = new System.Drawing.Point(99, 189);
+            this.btnEliminarPaciente.Margin = new System.Windows.Forms.Padding(0);
+            this.btnEliminarPaciente.Name = "btnEliminarPaciente";
+            this.btnEliminarPaciente.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminarPaciente.TabIndex = 5;
+            this.btnEliminarPaciente.Text = "Eliminar";
+            this.btnEliminarPaciente.UseVisualStyleBackColor = false;
+            this.btnEliminarPaciente.Click += new System.EventHandler(this.btnEliminarPaciente_Click);
             // 
-            // comboBox1
+            // comboBoxPacientes
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(45, 60);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(94, 21);
-            this.comboBox1.TabIndex = 7;
+            this.comboBoxPacientes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBoxPacientes.FormattingEnabled = true;
+            this.comboBoxPacientes.Location = new System.Drawing.Point(45, 60);
+            this.comboBoxPacientes.Name = "comboBoxPacientes";
+            this.comboBoxPacientes.Size = new System.Drawing.Size(94, 21);
+            this.comboBoxPacientes.TabIndex = 7;
             // 
             // lblPatientDelete
             // 
@@ -83,9 +85,9 @@ namespace WindowsMedicos
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(183, 221);
             this.Controls.Add(this.lblPatientDelete);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.btnCancelarMedico);
-            this.Controls.Add(this.btnAñadirMedico);
+            this.Controls.Add(this.comboBoxPacientes);
+            this.Controls.Add(this.btnCancelarEliminarPaciente);
+            this.Controls.Add(this.btnEliminarPaciente);
             this.Name = "FormDeleteUser";
             this.Text = "FormDeleteUser";
             this.ResumeLayout(false);
@@ -95,9 +97,9 @@ namespace WindowsMedicos
 
         #endregion
 
-        private System.Windows.Forms.Button btnCancelarMedico;
-        private System.Windows.Forms.Button btnAñadirMedico;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btnCancelarEliminarPaciente;
+        private System.Windows.Forms.Button btnEliminarPaciente;
+        private System.Windows.Forms.ComboBox comboBoxPacientes;
         private System.Windows.Forms.Label lblPatientDelete;
     }
 }

@@ -33,7 +33,7 @@ namespace WindowsMedicos
             this.btnMasPaciente = new System.Windows.Forms.Button();
             this.butnlistmedicos = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnDeleteUser = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -94,20 +94,21 @@ namespace WindowsMedicos
             this.button4.TabIndex = 3;
             this.button4.Text = "Listar Pacientes de un Medico";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // btnDeleteUser
             // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnDeleteUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(38, 254);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(127, 51);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Eliminar Paciente";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnDeleteUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteUser.Location = new System.Drawing.Point(38, 254);
+            this.btnDeleteUser.Name = "btnDeleteUser";
+            this.btnDeleteUser.Size = new System.Drawing.Size(127, 51);
+            this.btnDeleteUser.TabIndex = 4;
+            this.btnDeleteUser.Text = "Eliminar Paciente";
+            this.btnDeleteUser.UseVisualStyleBackColor = true;
+            this.btnDeleteUser.Click += new System.EventHandler(this.btnDeleteUser_Click);
             // 
             // button6
             // 
@@ -130,10 +131,10 @@ namespace WindowsMedicos
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.btnMasPaciente);
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.btnDeleteUser);
             this.panel1.Controls.Add(this.butnlistmedicos);
             this.panel1.Controls.Add(this.button4);
-            this.panel1.Location = new System.Drawing.Point(51, 12);
+            this.panel1.Location = new System.Drawing.Point(21, 10);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 387);
             this.panel1.TabIndex = 6;
@@ -142,8 +143,9 @@ namespace WindowsMedicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(295, 421);
+            this.ClientSize = new System.Drawing.Size(235, 416);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "FormInscripcion";
             this.Text = "Fromulario de Hospital";
             this.panel1.ResumeLayout(false);
@@ -157,7 +159,7 @@ namespace WindowsMedicos
         private System.Windows.Forms.Button btnMasPaciente;
         private System.Windows.Forms.Button butnlistmedicos;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnDeleteUser;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Panel panel1;
     }

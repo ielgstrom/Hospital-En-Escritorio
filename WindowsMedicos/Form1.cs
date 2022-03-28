@@ -23,11 +23,6 @@ namespace WindowsMedicos
             
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            var h = new FormDeleteUser();
-            h.ShowDialog();
-        }
 
         private void button6_Click(object sender, EventArgs e)
         {
@@ -57,6 +52,18 @@ namespace WindowsMedicos
             }
             if (ListaADevolevr != "") MessageBox.Show(ListaADevolevr);
             else MessageBox.Show("No hay medicos");
+        }
+
+        private void btnDeleteUser_Click(object sender, EventArgs e)
+        {
+            var u = new FormDeleteUser(listaPacientes, listaMedicos);
+            u.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var ty = new FormListPatientsOfDoctor(listaMedicos);
+            ty.ShowDialog();
         }
     }
 }

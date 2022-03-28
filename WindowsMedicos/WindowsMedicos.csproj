@@ -64,6 +64,12 @@
     <Compile Include="FormDeleteUser.Designer.cs">
       <DependentUpon>FormDeleteUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormListPatientsOfDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListPatientsOfDoctor.Designer.cs">
+      <DependentUpon>FormListPatientsOfDoctor.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormNewPersona.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDeleteUser.resx">
       <DependentUpon>FormDeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListPatientsOfDoctor.resx">
+      <DependentUpon>FormListPatientsOfDoctor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormNewPersona.resx">
       <DependentUpon>FormNewPersona.cs</DependentUpon>
